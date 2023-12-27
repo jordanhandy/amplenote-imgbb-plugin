@@ -23,7 +23,7 @@ Run `NODE_OPTIONS=--experimental-vm-modules npm test` to run the tests.
 
 If it complains about jsdom being absent, run `npm install -D jest-environment-jsdom` and try again.
 
-### With JetBrains
+### Testing With JetBrains IDE (using a visual debugger, like the Amplenote Founding Developers do)
 
 If you are using a JetBrains IDE (Webstorm, Rubymine, anything that speaks Javascript), you can get an 
 excellent debugging environment to run your tests.
@@ -41,3 +41,15 @@ NODE_OPTIONS=--experimental-vm-modules npm run test -- --watch
 * https://esbuild.github.io/getting-started/#your-first-bundle
 * https://jestjs.io/
 * https://www.gitclear.com
+
+## Building and Publishing
+
+Once your plugin is ready to test within Amplenote, you can build and test it within Amplenote by following these steps:
+
+0. Create a note for your plugin, if you haven't already. It needs to have at least a) settings table and b) code block. 
+   More details on a valid plugin note are in the [Guide to Building Plugins](https://www.amplenote.com/help/guide_to_developing_amplenote_plugins)
+1. [Install the Github Developers Plugin](https://www.amplenote.com/plugins/FZf22PXCKTRTB1tJwta1Nepq).
+2. Compile your plugin using `npm run build` or `node esbuild.js` from the root folder for your project
+3. Commit the resulting file (default location: `build/compiled.js`) to your git repo (e.g., `git add build/compiled.js && git commit -m "Compiled plugin"`)
+4. Push your changes to GitHub (`git push`)
+5. Choose "Github Plugin Builder: Refresh" from the note options menu in your plugin note

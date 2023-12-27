@@ -13,6 +13,7 @@
   "main": "lib/plugin.js",
   "name": "plugin-template",
   "scripts": {
+    "build": "node esbuild.js",
     "test": "jest"
   },
   "testEnvironment": "jsdom",
