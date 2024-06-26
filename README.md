@@ -5,7 +5,8 @@ Upload your Amplenote images to imgBB.
 You can do this as an additional storage measure, if you wanted to keep things stored outside of Amplenote, or, if you already had an externally-stored image you wanted to "transfer" to ImgBB.
 
 ## Demo: 
-![Demo](https://i.ibb.co/t2mhfZf/2024-06-25-23-18-08-1.gif)
+
+https://github.com/jordanhandy/amplenote-imgbb-plugin/assets/6423379/3c84209c-dc7a-4b7b-8968-6a4bfdffa226
 
 ![Demo Picture](https://i.ibb.co/ZN9JTWQ/2024-06-25-23-19-38.png)
 
