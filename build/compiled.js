@@ -11,6 +11,10 @@
     imageOption: {
       "Upload Image to ImgBB": {
         run: async function(app, image) {
+          if (app.settings[this.constants.settingAPIKey] == "") {
+            await app.alert("No API key specified.  Uploads will fail.  Please specify a key");
+            return;
+          }
           try {
             const src = image.src;
             const noteContent = await app.getNoteContent({ uuid: app.context.noteUUID });
