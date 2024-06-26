@@ -4,6 +4,10 @@ Upload your Amplenote images to imgBB.
 
 You can do this as an additional storage measure, if you wanted to keep things stored outside of Amplenote, or, if you already had an externally-stored image you wanted to "transfer" to ImgBB.
 
+## Functions
+1. Upload single image to imgBB
+2. Upload all images in a single note, to imgBB
+
 ## Demo: 
 
 https://github.com/jordanhandy/amplenote-imgbb-plugin/assets/6423379/3c84209c-dc7a-4b7b-8968-6a4bfdffa226
@@ -19,7 +23,3 @@ https://github.com/jordanhandy/amplenote-imgbb-plugin/assets/6423379/3c84209c-dc
 You can additionally specify an image expiration time where the image will automatically be purged from imgBB.
 
 If the image is to expire, alternately specify the amount of time until an image expires (minimum 60 seconds).
-
-## Functions
-1. Upload single image to imgBB
-2. Upload all images in a single note, to imgBB
