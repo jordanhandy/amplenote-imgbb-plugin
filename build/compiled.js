@@ -4,7 +4,7 @@
     // Settings
     constants: {
       settingAPIKey: "API Key",
-      settingImageExpiration: 'Image Expiration ("true" or "false". Default: false)',
+      settingImageExpiration: "Image Expiration (true or false. Default: false)",
       settingExpirationTime: "Expiration Time"
     },
     // Actions
@@ -22,7 +22,8 @@
             const replacement = await app.replaceNoteContent({ uuid: app.context.noteUUID }, newContent);
             await app.alert("Content replaced successfully.");
           } catch (err) {
-            await app.alert("Unable to replace image content " + err);
+            await app.alert("Unable to replace image content.  Please validate your settings, or contact plugin developer for support");
+            console.log("plugin error", err);
           }
         },
         // Check function whether to show the image option or not
@@ -42,7 +43,7 @@
       formData.append("image", src);
       formData.append("key", app.settings[this.constants.settingAPIKey]);
       if (app.settings[this.constants.settingImageExpiration] == "true") {
-        formData.append("expiration", app.settings["Expiration Time"]);
+        formData.append("expiration", app.settings[this.constants.settingExpirationTime]);
       }
       const options = {
         method: "POST",
