@@ -19,3 +19,7 @@ https://github.com/jordanhandy/amplenote-imgbb-plugin/assets/6423379/3c84209c-dc
 You can additionally specify an image expiration time where the image will automatically be purged from imgBB.
 
 If the image is to expire, alternately specify the amount of time until an image expires (minimum 60 seconds).
+
+## Functions
+1. Upload single image to imgBB
+2. Upload all images in a single note, to imgBB
